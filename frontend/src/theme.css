@@ -1,0 +1,89 @@
+/* Netflix-inspired theme */
+:root {
+  --primary-red: #e50914;
+  --primary-white: #fff;
+  --primary-dark: #141414;
+  --gray-light: #f5f5f5;
+  --gray-border: #e0e0e0;
+  --shadow: 0 2px 8px rgba(20,20,20,0.08);
+  --radius: 10px;
+  --transition: 0.2s all cubic-bezier(.4,0,.2,1);
+  --font-main: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: var(--primary-dark);
+  color: var(--primary-white);
+  font-family: var(--font-main);
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--primary-white);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover, a.active {
+  color: var(--primary-red);
+}
+
+.card {
+  background: var(--primary-white);
+  color: var(--primary-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.btn-primary {
+  background: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(20,20,20,0.10);
+}
+.btn-primary:hover {
+  background: #b0060f;
+}
+
+input, select {
+  border: 1px solid var(--gray-border);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+input:focus, select:focus {
+  border-color: var(--primary-red);
+  outline: none;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid var(--gray-border);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--primary-white);
+  color: var(--primary-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+h2, h3, h4 {
+  color: var(--primary-red);
+  margin-top: 0;
+} 
